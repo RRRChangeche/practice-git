@@ -1,2 +1,15 @@
 https://gitbook.tw/chapters/branch/merge-with-rebase
 start
+# 利用 rebase 合併分支 cat/dog
+add cat branch
+add cat.txt
+add cat2.txt
+add dog branch
+add dog.txt
+checkout cat branch
+git rebase dog
+merge cat into dev
+# 完成
+# 可以使用 git reflog 找到還沒rebase前的commit碼
+# git reset _commit_code_ --hard 回到rebase前的狀態
+end
